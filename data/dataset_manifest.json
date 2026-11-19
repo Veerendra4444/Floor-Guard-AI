@@ -1,0 +1,88 @@
+{
+  "manifest_version": "5.0.0-canonical-12class",
+  "updated_at": "2026-11-06T21:19:00Z",
+  "target_classes": [
+    "water_spill",
+    "oil_grease_spill",
+    "beverage_spill",
+    "food_spill",
+    "chemical_spill",
+    "broken_glass",
+    "cable_wire",
+    "loose_mat_carpet",
+    "floor_crack",
+    "floor_hole",
+    "obstacle_debris",
+    "sharp_object"
+  ],
+  "dataset_statistics": {
+    "total_images": 443,
+    "total_bounding_boxes": 541,
+    "negative_clean_floor_images": 22,
+    "duplicates_purged": 583
+  },
+  "sources": [
+    {
+      "name": "SynSpill Synthetic Floor Spill Dataset",
+      "url": "https://huggingface.co/datasets/sochastic/SynSpill",
+      "license": "CC BY 4.0",
+      "annotation_format": "YOLO Bounding Box",
+      "supported_classes": [
+        "water_spill",
+        "oil_grease_spill",
+        "chemical_spill"
+      ],
+      "status": "Verified & Ingested",
+      "real_vs_synthetic": "Synthetic Photorealistic"
+    },
+    {
+      "name": "Warehouse Safety Hazard Dataset",
+      "url": "https://huggingface.co/datasets/Jsohal174/warehouse-safety-hazard-dataset",
+      "license": "Apache 2.0",
+      "annotation_format": "YOLO Bounding Box",
+      "supported_classes": [
+        "obstacle_debris",
+        "cable_wire",
+        "water_spill"
+      ],
+      "status": "Verified & Ingested",
+      "real_vs_synthetic": "Real-World Industrial"
+    },
+    {
+      "name": "Roboflow Indoor Spill & Hazard Collection",
+      "url": "https://universe.roboflow.com/ag-spill/spill-detection-zlhyl",
+      "license": "CC BY 4.0",
+      "annotation_format": "YOLO Bounding Box",
+      "supported_classes": [
+        "water_spill",
+        "clean_floor"
+      ],
+      "status": "Audited & Filtered",
+      "real_vs_synthetic": "Real-World Commercial"
+    },
+    {
+      "name": "PHELE Physical Hazard Detection",
+      "url": "https://data.mendeley.com/datasets/yzsxcvc8dp",
+      "license": "CC BY-NC 3.0",
+      "annotation_format": "YOLO Bounding Box",
+      "supported_classes": [
+        "broken_glass",
+        "sharp_object",
+        "obstacle_debris"
+      ],
+      "status": "Verified & Ingested",
+      "real_vs_synthetic": "Real-World Lab & Facility"
+    },
+    {
+      "name": "FloorGuard Clean & Dry Walkway Baseline",
+      "url": "local://data/processed/clean_floors",
+      "license": "Proprietary Academic",
+      "annotation_format": "Negative / Background (0 Boxes)",
+      "supported_classes": [
+        "clean_floor"
+      ],
+      "status": "Verified",
+      "real_vs_synthetic": "Real-World Monitored Walkways"
+    }
+  ]
+}

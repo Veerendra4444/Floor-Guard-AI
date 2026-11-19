@@ -1,0 +1,25 @@
+{
+  "dataset_name": "FloorGuard Unified Canonical Dataset",
+  "total_images": 527,
+  "unique_images": 522,
+  "split_summary": {
+    "train": 363,
+    "val": 79,
+    "test": 85
+  },
+  "total_bounding_boxes": 634,
+  "classes_supported": [
+    "water_spill",
+    "oil_spill",
+    "chemical_spill",
+    "broken_glass",
+    "cable_cord",
+    "obstacle_debris",
+    "trash_litter",
+    "food_waste",
+    "mud_dirt",
+    "stairs_hazard"
+  ],
+  "negative_controls": 37,
+  "validation_passed": false
+}
